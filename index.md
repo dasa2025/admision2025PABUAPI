@@ -42,7 +42,7 @@ Para comemzar con el pie derecho, te invitamos a realizar la siguiente prueba di
 ¡Tómalo como un reto divertido y una oportunidad para crecer!
 
 - [PRUEBA DIAGNÓSTICA PA BUAP I: MATEMÁTICAS](https://www.goconqr.com/en/quiz/40421079/prueba-diagnostica-pa-buap-i-matematicas)
-- [PRUEBA DIAGNÓSTICA PA BUAP I: ESPAÑOL](https://www.goconqr.com/en/quiz/40421638/prueba-diagnostica-pa-buap-i-espanol))
+- [PRUEBA DIAGNÓSTICA PA BUAP I: ESPAÑOL](https://www.goconqr.com/en/quiz/40421638/prueba-diagnostica-pa-buap-i-espanol)
 
 ---
 

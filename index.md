@@ -46,7 +46,7 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 
 ---
 
-## 📏 Módulo 1: Expresión sin fronteras y pensamiento global
+## 📖 Módulo 1: Expresión sin fronteras y pensamiento global
 
 **Motivación**
 - ¡Bienvenido al increíble mundo de la lengua y la comunicación! Sabemos que para algunos puede parecer complicado, pero en este módulo encontrarás recursos oficiales que te permitirán repasar y mejorar tus habilidades verbales y de comunicación.
@@ -61,6 +61,14 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 
 **Materiales:**
 - [Materiales de preparación para la ubicación de la lengua extranjera -  inglés](https://drive.google.com/drive/folders/1UmB34H-5lWMvNPTiLzVbFlTJYoJoiOV5?usp=sharing)
+
+---
+
+## ➗ Módulo 3: Razonamiento Cuantitativo y Análisis Lógico
+- Bienvénido/a al mundo de las mátemática. A continuación encontrarás un material que te permitirá repasar conceptos claves de las matemáticas.
+
+**Materiales:**
+- [Repaso de matemáticas para la PA BUAP I](Materiales/Matematicas.md)
 
 ---
 

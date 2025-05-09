@@ -58,12 +58,9 @@ $$
 x - 2y = -4
 \end{cases}
 $$ 
-1. De la primera:  
-   $$
-   y = 5 - 2x
-   $$  
+1. De la primera: $y = 5 - 2x$  
 2. Sustituir en la segunda:  
-   $$
+   \[
    x - 2(5 - 2x) = -4 
    \;\Longrightarrow\;
    x - 10 + 4x = -4
@@ -71,7 +68,7 @@ $$
    5x = 6
    \;\Longrightarrow\;
    x = \tfrac{6}{5}
-   $$  
+   \]  
 3. Entonces  
    $$
    y = 5 - 2\cdot\tfrac{6}{5}

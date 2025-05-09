@@ -52,15 +52,15 @@
 
 **Ejemplo resuelto**  
 Resolver el sistema:  
-$$
+$
 \begin{cases}
 2x + y = 5\\
 x - 2y = -4
 \end{cases}
-$$ 
+$ 
 1. De la primera: $y = 5 - 2x$  
 2. Sustituir en la segunda:  
-   \[
+   $
    x - 2(5 - 2x) = -4 
    \;\Longrightarrow\;
    x - 10 + 4x = -4
@@ -68,13 +68,13 @@ $$
    5x = 6
    \;\Longrightarrow\;
    x = \tfrac{6}{5}
-   \]  
+   $  
 3. Entonces  
-   $$
+   $
    y = 5 - 2\cdot\tfrac{6}{5}
      = 5 - \tfrac{12}{5}
      = \tfrac{13}{5}
-   $$
+   $
 
 ---
 
@@ -101,11 +101,11 @@ $$
 
 **Ejemplo resuelto**  
 Ecuación de la recta por $(1,2)$ con pendiente $m=-3$:  
-$$
+$
 y - 2 = -3(x - 1)
 \;\Longrightarrow\;
 y = -3x + 5
-$$
+$
 
 #### Secciones cónicas
 - *Parábola*:
@@ -134,9 +134,9 @@ $$
 -  Representaciones gráficas: histograma, polígono de frecuencias, gráfica de barras, gráfica circular, ojiva.
 - Espacio muestral y eventos.  
 - Probabilidad clásica:  
-  $$
+  $
     P(A)=\frac{\text{casos favorables}}{\text{casos totales}}
-  $$  
+  $  
 - Medidas de tendencia central: media, mediana, moda.  
 - Varianza y desviación estándar.  
 - Representación gráfica: histograma, diagrama de cajas.
@@ -153,18 +153,18 @@ $$
 **Ejemplo resuelto**  
 Datos: 2, 4, 4, 6, 8  
 - Media:  
-  $$
+  $
   \bar x = \frac{2+4+4+6+8}{5} = 4.8
-  $$  
+  $  
 - Varianza:  
-  $$
+  $
   \sigma^2 = \frac{(2-4.8)^2 + (4-4.8)^2 + \dots + (8-4.8)^2}{5}
            = 4.56
-  $$  
+  $  
 - Desviación estándar:  
-  $$
+  $
   \sigma \approx 2.135
-  $$
+  $
 
 ---
 
@@ -188,10 +188,9 @@ Datos: 2, 4, 4, 6, 8
 #### Regla de Bayes
 
 **Fórmula**  
-$$
-P(B \mid A) \;=\; \frac{P(A \mid B)\,P(B)}{P(A)}\quad\text{donde}\quad
-P(A)=\sum_i P(A\mid B_i)\,P(B_i).
-$$
+$P(B \mid A) \;=\; \frac{P(A \mid B)\,P(B)}{P(A)}\quad\text{donde}\quad$
+
+$P(A)=\sum_i P(A\mid B_i)\,P(B_i).$
 
 **Interpretación**  
 - $P(B)$: probabilidad a priori de $B$.  
@@ -206,12 +205,12 @@ En una prueba de detección:
 
 ¿Cuál es $P(\text{enfermo}\mid\text{+})$?  
 
-$$
+$
 P(\text{enfermo}\mid +)
 =\frac{0.95\cdot0.02}{0.95\cdot0.02 + 0.10\cdot0.98}
 =\frac{0.019}{0.019 + 0.098}
 \approx 0.162.
-$$
+$
 
 ---
 
@@ -229,11 +228,10 @@ $$
 |----------------------------|-----------------------------------------------------------------|
 | Coeficiente de correlación | $r = \displaystyle\frac{\sum (x_i-\bar x)(y_i-\bar y)}{\sqrt{\sum (x_i-\bar x)^2\;\sum (y_i-\bar y)^2}}$ |
 | Recta de regresión         | $\hat y = a + b\,x$,  
-  $$
-    b = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2},
-    \quad
-    a = \bar y - b\,\bar x
-  $$
+  $b = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2},
+    \quad$
+    
+    $a = \bar y - b\,\bar x$
 
 ---
 
@@ -263,20 +261,20 @@ Resuelve los siguientes ejercicios de práctica.
 ### Álgebra
 
 1. Factoriza:  
-   $$
+   $
    x^2 - 5x + 6
-   $$
+   $
 2. Resuelve:  
-   $$
+   $
    3(x-2) + 4 = 2x + 1
-   $$
+   $
 3. Sistema:  
-   $$
+   $
    \begin{cases}
    x + 2y = 7\\
    4x - y = 5
    \end{cases}
-   $$
+   $
 
 ### Geometría Analítica
 
@@ -306,76 +304,14 @@ Resuelve los siguientes ejercicios de práctica.
 ### Precálculo
 
 9. Simplifica:  
-   $$
+   $
    \ln\bigl(e^{3x}\bigr)
-   $$
+   $
 10. Verifica la identidad:  
-    $$
+    $
     \tan^2\theta + 1 = \sec^2\theta
-    $$
+    $
 
 ---
-
-## 🔑 Clave de Respuestas
-
-1. $(x-2)(x-3)$  
-2. $x = 3$  
-3.  
-   $$
-   x = 7 - 2y;\quad
-   4(7-2y) - y = 5
-   \;\Longrightarrow\;
-   9y = 23
-   \;\Longrightarrow\;
-   y = \tfrac{23}{9},\;
-   x = \tfrac{17}{9}
-   $$  
-4.  
-   $$
-   d = \sqrt{(4 - (-1))^2 + (-2 - 3)^2}
-     = \sqrt{25 + 25}
-     = 5\sqrt{2}
-   $$  
-5.  
-   $$
-   (x-2)^2 + (y+1)^2 = 9
-   $$  
-6.  
-   - Números pares: $\{2,4,6\}$ → 3 casos  
-   - Múltiplos de 3: $\{3,6\}$ → 2 casos  
-   - Intersección: $\{6\}$ → 1 caso  
-   $$
-   P = \frac{3 + 2 - 1}{6} = \frac{4}{6} = \frac{2}{3}
-   $$  
-7. Datos: 5, 7, 7, 10, 12  
-   - Media: $\tfrac{5+7+7+10+12}{5}=8.2$  
-   - Mediana: 7  
-   - Moda: 7  
-8.  
-   - $\bar x = 6,\; \bar y = 83.2$  
-   -  
-     $$
-     r \approx 0.992
-     $$  
-   -  
-     $$
-     b \approx 4.1,\quad
-     a = 83.2 - 4.1\cdot6 \approx 58.6
-     $$  
-     $\hat y = 58.6 + 4.1x$  
-9.  
-   $$
-   \ln(e^{3x}) = 3x
-   $$  
-10.  
-    $$
-    \tan^2\theta + 1
-    = \frac{\sin^2\theta}{\cos^2\theta} + \frac{\cos^2\theta}{\cos^2\theta}
-    = \frac{1}{\cos^2\theta}
-    = \sec^2\theta
-    $$
-
-
-
 
 > Written with [StackEdit](https://stackedit.io/).

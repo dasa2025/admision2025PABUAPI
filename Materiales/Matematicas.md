@@ -1,4 +1,4 @@
-﻿# Guía de Estudio y Hoja de Trabajo
+# Guía de Estudio y Hoja de Trabajo
 
 ---
 
@@ -52,15 +52,18 @@
 
 **Ejemplo resuelto**  
 Resolver el sistema:  
-$
+$$
 \begin{cases}
 2x + y = 5\\
 x - 2y = -4
 \end{cases}
-$ 
-1. De la primera: $y = 5 - 2x$  
+$$ 
+1. De la primera:  
+   $$
+   y = 5 - 2x
+   $$  
 2. Sustituir en la segunda:  
-   $
+   $$
    x - 2(5 - 2x) = -4 
    \;\Longrightarrow\;
    x - 10 + 4x = -4
@@ -68,13 +71,13 @@ $
    5x = 6
    \;\Longrightarrow\;
    x = \tfrac{6}{5}
-   $  
+   $$  
 3. Entonces  
-   $
+   $$
    y = 5 - 2\cdot\tfrac{6}{5}
      = 5 - \tfrac{12}{5}
      = \tfrac{13}{5}
-   $
+   $$
 
 ---
 
@@ -101,11 +104,11 @@ $
 
 **Ejemplo resuelto**  
 Ecuación de la recta por $(1,2)$ con pendiente $m=-3$:  
-$
+$$
 y - 2 = -3(x - 1)
 \;\Longrightarrow\;
 y = -3x + 5
-$
+$$
 
 #### Secciones cónicas
 - *Parábola*:
@@ -134,9 +137,9 @@ $
 -  Representaciones gráficas: histograma, polígono de frecuencias, gráfica de barras, gráfica circular, ojiva.
 - Espacio muestral y eventos.  
 - Probabilidad clásica:  
-  $
+  $$
     P(A)=\frac{\text{casos favorables}}{\text{casos totales}}
-  $  
+  $$  
 - Medidas de tendencia central: media, mediana, moda.  
 - Varianza y desviación estándar.  
 - Representación gráfica: histograma, diagrama de cajas.
@@ -153,18 +156,18 @@ $
 **Ejemplo resuelto**  
 Datos: 2, 4, 4, 6, 8  
 - Media:  
-  $
+  $$
   \bar x = \frac{2+4+4+6+8}{5} = 4.8
-  $  
+  $$  
 - Varianza:  
-  $
+  $$
   \sigma^2 = \frac{(2-4.8)^2 + (4-4.8)^2 + \dots + (8-4.8)^2}{5}
            = 4.56
-  $  
+  $$  
 - Desviación estándar:  
-  $
+  $$
   \sigma \approx 2.135
-  $
+  $$
 
 ---
 
@@ -188,9 +191,10 @@ Datos: 2, 4, 4, 6, 8
 #### Regla de Bayes
 
 **Fórmula**  
-$P(B \mid A) \;=\; \frac{P(A \mid B)\,P(B)}{P(A)}\quad\text{donde}\quad$
-
-$P(A)=\sum_i P(A\mid B_i)\,P(B_i).$
+$$
+P(B \mid A) \;=\; \frac{P(A \mid B)\,P(B)}{P(A)}\quad\text{donde}\quad
+P(A)=\sum_i P(A\mid B_i)\,P(B_i).
+$$
 
 **Interpretación**  
 - $P(B)$: probabilidad a priori de $B$.  
@@ -205,12 +209,12 @@ En una prueba de detección:
 
 ¿Cuál es $P(\text{enfermo}\mid\text{+})$?  
 
-$
+$$
 P(\text{enfermo}\mid +)
 =\frac{0.95\cdot0.02}{0.95\cdot0.02 + 0.10\cdot0.98}
 =\frac{0.019}{0.019 + 0.098}
 \approx 0.162.
-$
+$$
 
 ---
 
@@ -228,10 +232,11 @@ $
 |----------------------------|-----------------------------------------------------------------|
 | Coeficiente de correlación | $r = \displaystyle\frac{\sum (x_i-\bar x)(y_i-\bar y)}{\sqrt{\sum (x_i-\bar x)^2\;\sum (y_i-\bar y)^2}}$ |
 | Recta de regresión         | $\hat y = a + b\,x$,  
-  $b = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2},
-    \quad$
-    
-    $a = \bar y - b\,\bar x$
+  $$
+    b = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2},
+    \quad
+    a = \bar y - b\,\bar x
+  $$
 
 ---
 
@@ -261,20 +266,20 @@ Resuelve los siguientes ejercicios de práctica.
 ### Álgebra
 
 1. Factoriza:  
-   $
+   $$
    x^2 - 5x + 6
-   $
+   $$
 2. Resuelve:  
-   $
+   $$
    3(x-2) + 4 = 2x + 1
-   $
+   $$
 3. Sistema:  
-   $
+   $$
    \begin{cases}
    x + 2y = 7\\
    4x - y = 5
    \end{cases}
-   $
+   $$
 
 ### Geometría Analítica
 
@@ -304,14 +309,15 @@ Resuelve los siguientes ejercicios de práctica.
 ### Precálculo
 
 9. Simplifica:  
-   $
+   $$
    \ln\bigl(e^{3x}\bigr)
-   $
+   $$
 10. Verifica la identidad:  
-    $
+    $$
     \tan^2\theta + 1 = \sec^2\theta
-    $
+    $$
 
 ---
+
 
 > Written with [StackEdit](https://stackedit.io/).

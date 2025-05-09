@@ -37,7 +37,7 @@ Estos materiales no son obligatorios y son totalmente gratuitos. Sin embargo, pu
 ---
 ## 💻 Prueba Diagnóstica de la PA BUAP I
 
-Para comemzar con el pie derecho, te invitamos a realizar la siguiente prueba diagnóstica que te ayudará a identificar tus áreas de oportunidad. Aquí podrás repasar los temas más importantes y conocer el estilo y tipo de preguntas que encontrarás en el examen real. ¡No te preocupes si cometes errores! Lo más importante es descubrir tus fortalezas y las áreas en las que puedes mejorar.
+Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba diagnóstica que te ayudará a identificar tus áreas de oportunidad. Aquí podrás repasar los temas más importantes y conocer el estilo y tipo de preguntas que encontrarás en el examen real. ¡No te preocupes si cometes errores! Lo más importante es descubrir tus fortalezas y las áreas en las que puedes mejorar.
 
 ¡Tómalo como un reto divertido y una oportunidad para crecer!
 
@@ -71,6 +71,6 @@ Si tienes dudas o quieres sugerir mejoras, escribe a:
 
 ---
 
-_Curso publicado con ❤️ usando [GitHub Pages](https://pages.github.com) El material ha sido creado con el trabajo de docentes de la BUAP y apoyado por herramientas de IA tales como Magic School, Questgen, Quizgecko, PrepAi y modelos avanzados de ChatGPT, Gemini y Deepseek._
+_Materiales publicados con ❤️ usando [GitHub Pages](https://pages.github.com) El material ha sido creado con el trabajo de docentes de la BUAP y apoyado por herramientas de IA tales como Magic School, Questgen, Quizgecko, PrepAi y modelos avanzados de ChatGPT, Gemini y Deepseek._
 
 ---

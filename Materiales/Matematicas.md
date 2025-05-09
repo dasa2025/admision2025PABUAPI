@@ -51,8 +51,7 @@
 | Diferencia de cuadrados   | $a^2 - b^2 = (a - b)(a + b)$                               |
 
 **Ejemplo resuelto**  
-Resolver el sistema:  
-$$\begin{cases} 2x + y = 5\\ x - 2y = -4\end{cases}$$ 
+Resolver el sistema: $\begin{cases} 2x + y = 5\\ x - 2y = -4\end{cases}$ 
 1. De la primera:  
    $$
    y = 5 - 2x

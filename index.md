@@ -68,7 +68,7 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 - Bienvénido/a al mundo de las mátemática. A continuación encontrarás un material que te permitirá repasar conceptos claves de las matemáticas.
 
 **Materiales:**
-- [Repaso de matemáticas para la PA BUAP I](Materiales/Matematicas.md)
+- [Repaso de matemáticas para la PA BUAP I](Matematicas.html)
 
 ---
 

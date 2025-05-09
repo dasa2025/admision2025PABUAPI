@@ -52,12 +52,7 @@
 
 **Ejemplo resuelto**  
 Resolver el sistema:  
-$$
-\begin{cases}
-2x + y = 5\\
-x - 2y = -4
-\end{cases}
-$$ 
+$$\begin{cases} 2x + y = 5\\ x - 2y = -4\end{cases}$$ 
 1. De la primera:  
    $$
    y = 5 - 2x
@@ -100,7 +95,6 @@ $$
 | Ecuación general de la recta | $Ax + By + C = 0$ 
 | Circunferencia       | $(x - h)^2 + (y - k)^2 = r^2$
 | Ecuación general de la circunferencia | $x^2 + y^2 + Dx + Ey + F = 0$
-|
 
 **Ejemplo resuelto**  
 Ecuación de la recta por $(1,2)$ con pendiente $m=-3$:  

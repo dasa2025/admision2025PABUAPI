@@ -4,7 +4,7 @@ Bienvenido/a a esta página con los materiales de preparación oficiales para pr
 
 Antes que nada, queremos ser súper claros contigo: ningún curso, material o persona puede garantizarte un lugar en la admisión. La clave para alcanzar tu objetivo está en tu dedicación, esfuerzo y compromiso personal. Los materiales que encontrarás aquí son solo un apoyo extra, diseñados para reforzar lo que ya has aprendido en la secundaria y ayudarte a llegar más seguro/a y preparado/a al día del examen.
 
-Ningún material puede reemplazar lo que aprendiste en la secundaria. Sigue repasando y fortaleciendo esos conocimientos fundamentales para tener el mejor desempeño posible.
+Ningún material puede reemplazar lo que aprendiste en la educación media superior. Sigue repasando y fortaleciendo esos conocimientos fundamentales para tener el mejor desempeño posible.
 
 ---
 

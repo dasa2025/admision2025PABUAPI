@@ -69,6 +69,7 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 
 **Materiales:**
 - [Repaso de matemáticas para la PA BUAP I](Matematicas.html)
+- [Materiales de Preparación para Matemáticas](https://drive.google.com/drive/folders/1Tt8CukD-s8NBF7R9zTEV5XlAWOLKLTrx?usp=sharing)
 
 ---
 

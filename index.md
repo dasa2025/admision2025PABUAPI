@@ -73,6 +73,32 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 
 ---
 
+## Módulo 4: Área de Conocimiento 🫀⚛️🧑‍🤝‍🧑🎨💰
+
+### Ciencias Naturales y de la Salud
+
+En esta sección encontrarás los siguientes materiales de estudio:
+- [Materiales de Ciencias Naturales y de la Salud](https://drive.google.com/drive/folders/14214nxeJmVn2eeMyf0HS-78ckwNgvU6F?usp=sharing)
+- [Repaso de Ciencias Naturales y de la Salud - Parte 1](Salud1.html)
+
+  
+### Ciencias Sociales y Humanidades
+
+En esta sección encontrarás los siguientes materiales de estudio:
+- [Materiales de Ciencias Sociales y Humanidades](https://drive.google.com/drive/folders/10yZNVnwol1VmhYMCPqoqNe8aFtVkzPTU?usp=sharing)
+
+### Ciencias Económico-Administrativas
+
+En esta sección encontrarás los siguientes materiales de estudio:
+- [Materiales de Ciencias Económico-Administrativas](https://drive.google.com/drive/folders/1WJX5RsqaC8cRuBBKcHiMZXYbEeVhjFjs?usp=sharing)
+
+### Ingenierías y Ciencias Exactas
+
+En esta sección encontrarás los siguientes materiales de estudio:
+- [Materiales de Ingeniería y Ciencias Exactas](https://drive.google.com/drive/folders/1g7HtvS0zumAvZKzstLHLALOQDdKpb1z0?usp=sharing)
+
+---
+
 ## 📩 Contacto
 
 Si tienes dudas o quieres sugerir mejoras, escribe a:  

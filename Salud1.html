@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>Materiales de Preparación para el Área de Ciencias Naturales y de la Salud</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='materiales-de-preparación-para-el-área-de-ciencias-naturales-y-de-la-salud-🧫'><span>Materiales de Preparación para el Área de Ciencias Naturales y de la Salud 🧫</span></h1><h2 id='la-célula-eucariota'><span>La Célula Eucariota</span></h2><p><span>La célula representa la unidad fundamental de todo ser vivo, actuando como el bloque de construcción esencial que da forma a la vida tal como la conocemos. Cada célula posee la notable capacidad de llevar a cabo por sí misma las tres funciones vitales que caracterizan a un organismo completo: la nutrición, la relación con el medio ambiente que la rodea y la reproducción.</span></p><blockquote><p><span>La nutrición consiste en obtener energía y materiales esenciales del entorno para mantener las operaciones internas de la célula. Esto incluye procesos como la captación de nutrientes, la digestión de moléculas complejas en componentes más simples y la asimilación de estos componentes para el crecimiento y la reparación. </span></p><p><span>La relación se refiere a cómo una célula interactúa con su entorno, detectando estímulos como luz, temperatura o sustancias químicas y respondiendo. Por ejemplo, puede moverse hacia alimento o alejarse de un estímulo dañino. </span></p><p><span>La reproducción es el proceso mediante el cual las células se multiplican, asegurando la transmisión de la información genética y la continuidad de la vida a nivel celular.</span></p></blockquote><p><span>Según su organización, podemos distinguir dos grandes grupos:</span></p><ul><li><p><strong><span>Unicelulares</span></strong><span>: organismos formados por una sola célula, como las bacterias o algunos protistas.</span></p></li><li><p><strong><span>Pluricelulares</span></strong><span>: organismos compuestos por múltiples células que actúan de manera coordinada, como los animales, las plantas y los hongos.</span></p></li></ul><p><span>Los seres cuyos cuerpos están formados por </span><strong><span>células eucariotas</span></strong><span> se denominan </span><strong><span>eucariontes</span></strong><span>. La aparición de este tipo celular supuso un hito evolutivo: sentó las bases para la organización compleja de tejidos y órganos y dio origen a los reinos superiores (Animalia, Plantae, Fungi y Protista).</span></p><p><span>El término “eucariota” proviene del griego eu- (“verdadero”) y -karyon (“núcleo”), haciendo referencia a su rasgo más distintivo: la presencia de un núcleo verdadero. A continuación, se describen las estructuras principales de la célula eucariota:</span></p><ol start='' ><li><p><strong><span>Membrana plasmática</span></strong><span>: Actúa como barrera selectiva: regula el paso de nutrientes y desechos, y mantiene la integridad de la célula.</span></p></li><li><p><strong><span>Pared celular</span></strong><span>: Solo en células vegetales (formada por celulosa) y de hongos (formada por quitina). Proporciona rigidez y protección adicional.</span></p></li><li><p><strong><span>Núcleo</span></strong><span>: Contiene los </span><em><span>cromosomas</span></em><span>, que portan la información genética (ADN). Está rodeado por la </span><em><span>membrana nuclear</span></em><span>, que regula el intercambio de sustancias con el citoplasma.</span></p></li><li><p><strong><span>Citoplasma</span></strong><span>: Medio acuoso donde flotan los </span><em><span>orgánulos</span></em><span>; muchos de ellos están delimitados por membranas internas. Los principales son:</span></p><ol start='' ><li><p><strong><span>Mitocondrias</span></strong><span>: responsables de la producción de energía (ATP) mediante la respiración celular.</span></p></li><li><p><strong><span>Cloroplastos</span></strong><span>: exclusivos de las plantas y algunos protistas; contienen clorofila y realizan la fotosíntesis.</span></p></li><li><p><strong><span>Lisosomas</span></strong><span>: contienen enzimas digestivas que degradan moléculas y orgánulos dañados.</span></p></li><li><p><strong><span>Retículo endoplasmático (liso y rugoso)</span></strong><span>: sintetiza lípidos y proteínas.</span></p></li><li><p><strong><span>Aparato de Golgi</span></strong><span>: modifica, clasifica y empaqueta proteínas y lípidos para su transporte.</span></p></li></ol></li></ol><p><span>Desde un punto de vista evolutivo, las células eucariotas se han diversificado en tres grandes tipos según su función y composición de organelos:</span></p><ul><li><p><strong><span>Células animales</span></strong><span>: sin pared celular, con centríolos y lisosomas bien desarrollados.</span></p></li><li><p><strong><span>Células vegetales</span></strong><span>: con pared celular de celulosa, grandes vacuolas y cloroplastos.</span></p></li><li><p><strong><span>Células de hongos</span></strong><span>: con pared de quitina y vacuolas prominentes, pero sin cloroplastos.</span></p></li></ul><blockquote><p><span>Comprender la organización celular es fundamental para todas las disciplinas de las ciencias naturales y la salud. </span></p></blockquote><h2 id='la-célula-procariota'><span>La célula procariota</span></h2><p><span>Según la </span><strong><span>Teoría Celular</span></strong><span>, toda célula debe cumplir al menos cuatro características esenciales:</span></p><ol start='' ><li><p><strong><span>Membrana plasmática</span></strong><span>: Actúa como barrera selectiva, separando el medio externo del interno y regulando el paso de sustancias.</span></p></li><li><p><strong><span>Citoplasma</span></strong><span>: Medio semifluido formado por dos fases (</span><em><span>citosol</span></em><span> y </span><em><span>citogel</span></em><span>) donde flotan las estructuras intracelulares. A diferencia de las eucariotas, las procariotas no tienen núcleo definido, por lo que todo su contenido interno se mezcla en un único espacio.</span></p></li><li><p><strong><span>Material genético (ADN)</span></strong><span>: Contiene la información necesaria para la actividad y reproducción de la célula.</span></p></li><li><p><strong><span>Ribosomas</span></strong><span>: Complejos moleculares encargados de sintetizar proteínas a partir de la información genética.</span></p></li></ol><h3 id='qué-es-un-procarionte'><span>¿Qué es un procarionte?</span></h3><p><span>Un </span><strong><span>procarionte</span></strong><span> es un organismo unicelular simple que:</span></p><ul><li><p><span>Carece de </span><em><span>núcleo verdadero</span></em><span> y </span><em><span>orgánulos membranosos</span></em><span>.</span></p></li><li><p><span>No presenta compartimentación interna: el citoplasma forma un solo espacio continuo.</span></p></li><li><p><span>Aloja su ADN en el </span><em><span>nucleoide</span></em><span>, una región central donde suele organizarse en un solo “cromosoma” circular.</span></p></li></ul><p><span>Los procariontes más conocidos son las </span><em><span>bacterias</span></em><span> y algunas </span><em><span>algas microscópicas</span></em><span> (cianofitas).</span></p><h4 id='estructuras-adicionales-y-reproducción'><span>Estructuras adicionales y reproducción</span></h4><ul><li><p><strong><span>Pared celular</span></strong><span>: Formada principalmente de peptidoglicano, aporta rigidez, protege contra la desecación y mantiene la forma de la célula.</span></p></li><li><p><strong><span>Cápsula</span></strong><span> </span><em><span>(en algunas especies)</span></em><span>: Capa externa de polisacáridos que facilita la adherencia a superficies y, en algunos casos, contribuye a la virulencia de la bacteria.</span></p></li><li><p><strong><span>Reproducción</span></strong><span>: Se realiza por </span><em><span>fisión binaria</span></em><span>, un proceso simple y rápido en el que la célula duplica su ADN y se divide en dos células hijas genéticamente idénticas. No hay mitosis ni meiosis.</span></p></li></ul><blockquote><p><span>Comprender las diferencias entre células procariotas y eucariotas es fundamental para disciplinas como microbiología, biotecnología y medicina.</span></p></blockquote><h2 id='teoría-celular'><span>Teoría celular</span></h2><p><span>Nuestro viaje hacia el mundo de lo infinitesimal comenzó a mediados del siglo XVII, con la invención del microscopio. Gracias a este instrumento, fue posible descubrir un universo oculto: las células y sus estructuras.</span></p><ul><li><p><strong><span>1838</span></strong><span>: El botánico alemán </span><em><span>Matthias J. Schleiden</span></em><span> observó que las plantas están formadas por células y que su crecimiento ocurre por la incorporación de células nuevas.</span></p></li><li><p><strong><span>1839</span></strong><span>: El zoólogo </span><em><span>Theodor Schwann</span></em><span> demostró que los tejidos animales también comparten esta misma base celular.</span></p></li><li><p><strong><span>1855</span></strong><span>: El médico </span><em><span>Rudolf Virchow</span></em><span> completó la teoría con su famoso principio “</span><em><span>omnis cellula e cellula</span></em><span>”, es decir, que </span><strong><span>toda célula proviene de otra preexistente</span></strong><span>.</span></p></li></ul><p><span>Así nació la </span><strong><span>Teoría Celular</span></strong><span>, considerada el primer paradigma unificador de la biología. Sus tres postulados fundamentales son:</span></p><ul><li><p><strong><span>Unidad estructural</span></strong><span>: La célula es la pieza básica que conforma la estructura de todos los seres vivos.</span></p></li><li><p><strong><span>Unidad funcional</span></strong><span>: En cada célula ocurren los procesos vitales: obtención de energía, síntesis de moléculas, eliminación de desechos y respuesta al entorno.</span></p></li><li><p><strong><span>Unidad de origen</span></strong><span>: Cada célula surge de la división de una célula anterior, garantizando la continuidad de la vida.</span></p></li></ul><p><span>A pesar de la enorme diversidad de formas y funciones celulares, todas comparten </span><strong><span>cuatro componentes esenciales</span></strong><span>:</span></p><ul><li><p><strong><span>Membrana citoplasmática</span></strong><span>: Delimita la célula y regula el paso de sustancias.</span></p></li><li><p><strong><span>Citoplasma</span></strong><span>: Gel ﬂuido donde se desarrollan las reacciones bioquímicas.</span></p></li><li><p><strong><span>Material genético</span></strong><span> (</span><em><span>ácidos nucleicos</span></em><span>): Contiene la “receta” para construir y mantener la célula.</span></p></li><li><p><strong><span>Ribosomas</span></strong><span>: Máquinas moleculares que ensamblan proteínas, indispensables para la estructura y función celular.</span></p></li></ul><p><span>Para sobrevivir, las células deben:</span></p><ul><li><p><span>Obtener energía y nutrientes del entorno.</span></p></li><li><p><span>Sintetizar proteínas y otras moléculas necesarias para crecer y funcionar.</span></p></li><li><p><span>Eliminar desechos que puedan ser tóxicos.</span></p></li><li><p><span>Interaccionar con otras células, formando tejidos y órganos.</span></p></li><li><p><span>Reproducirse, asegurando la continuidad de los organismos.</span></p></li></ul><blockquote><p><span>La Teoría Celular no solo es un conjunto de ideas históricas, sino la base que explica cómo funciona la vida en su nivel más pequeño. Comprender estos principios te preparará para profundizar en áreas como la microbiología, la genética y la fisiología.</span></p></blockquote><h2 id='división-celular'><span>División celular</span></h2><p><span>La división celular es el proceso por el cual una célula reparte su material genético y sus componentes en dos (o más) células hijas. Gracias a este mecanismo, los organismos crecen, reparan tejidos y, en el caso de la reproducción sexual, generan diversidad genética.</span></p><hr /><h3 id='división-en-procariotas-fisión-binaria'><span>División en procariotas: fisión binaria</span></h3><p><span>En las células procariotas (como las bacterias), el material genético consiste en un solo cromosoma circular de ADN asociado a proteínas específicas. El proceso es relativamente sencillo:</span></p><ol><li><p><strong><span>Replicación del ADN</span></strong>
+<span> El cromosoma se duplica, formando dos moléculas idénticas.</span></p></li><li><p><strong><span>Separación de los cromosomas</span></strong>
+<span> Cada molécula de ADN se dirige hacia polos opuestos de la célula.</span></p></li><li><p><strong><span>Citocinesis</span></strong>
+<span> La membrana plasmática se invagina en el centro, dividiendo el citoplasma y formando dos células hijas idénticas.</span></p></li></ol><blockquote><p><strong><span>Ventaja clave:</span></strong>
+<span> Rápida y eficiente, ideal para la reproducción a gran escala en ambientes favorables.</span></p></blockquote><hr /><h3 id='división-en-eucariotas-mitosis'><span>División en eucariotas: mitosis</span></h3><p><span>La mitosis es el tipo de división que mantienen el número de cromosomas intacto, permitiendo el crecimiento y la renovación celular en seres pluricelulares. En los humanos, por ejemplo, cada célula somática reparte </span><strong><span>46 cromosomas</span></strong><span> (23 pares) de manera equitativa.</span></p><h4 id='fases-de-la-mitosis'><span>Fases de la mitosis</span></h4><ol><li><p><strong><span>Interfase</span></strong></p><ul><li><p><span>La célula crece y duplica su ADN.</span></p></li><li><p><span>La cromatina (ADN + proteínas) aún está desenrollada.</span></p></li></ul></li><li><p><strong><span>Profase</span></strong></p><ul><li><p><span>La cromatina se condensa en cromosomas visibles.</span></p></li><li><p><span>Los centriolos (en células animales) migran hacia polos opuestos.</span></p></li><li><p><span>Comienza a formarse el huso mitótico.</span></p></li></ul></li><li><p><strong><span>Prometafase</span></strong><span> </span><em><span>(a veces incluida en profase tardía)</span></em></p><ul><li><p><span>La envoltura nuclear se desintegra.</span></p></li><li><p><span>Los microtúbulos del huso se unen a los cinetocoros de los cromosomas.</span></p></li></ul></li><li><p><strong><span>Metafase</span></strong></p><ul><li><p><span>Los cromosomas se alinean en el </span><strong><span>plano ecuatorial</span></strong><span> de la célula.</span></p></li></ul></li><li><p><strong><span>Anafase</span></strong></p><ul><li><p><span>Las cromátides hermanas se separan y son arrastradas a polos opuestos.</span></p></li></ul></li><li><p><strong><span>Telofase</span></strong></p><ul><li><p><span>Se reconstituye la envoltura nuclear alrededor de cada lote de cromosomas.</span></p></li><li><p><span>Los cromosomas se vuelven a desenrollar en forma de cromatina.</span></p></li><li><p><span>Desaparece el huso mitótico.</span></p></li></ul></li><li><p><strong><span>Citocinesis</span></strong></p><ul><li><p><span>La célula se estrangula por el plano medio (en animales) o forma una nueva pared celular (en vegetales), dando lugar a dos células hijas.</span></p></li></ul></li></ol><blockquote><p><strong><span>Nota para el estudiante:</span></strong>
+<span> Cada fase es esencial para asegurar que cada célula hija reciba una copia exacta del genoma y los orgánulos necesarios.</span></p></blockquote><hr /><h3 id='división-en-eucariotas-meiosis'><span>División en eucariotas: meiosis</span></h3><p><span>La meiosis es el tipo de división que reduce a la mitad el número de cromosomas, clave para la formación de gametos (óvulos y espermatozoides) en animales o de esporas en plantas.</span></p><ol><li><p><strong><span>Meiosis I</span></strong></p><ul><li><p><strong><span>Profase I</span></strong><span>: los cromosomas homólogos se aparean y pueden intercambiar segmentos (entrecruzamiento).</span></p></li><li><p><strong><span>Metafase I</span></strong><span>: los pares homólogos se alinean en la placa ecuatorial.</span></p></li><li><p><strong><span>Anafase I</span></strong><span>: cada homólogo se separa hacia polos opuestos (las cromátides permanecen unidas).</span></p></li><li><p><strong><span>Telofase I y citocinesis</span></strong><span>: se forman dos células haploides (n), cada una con cromosomas duplicados.</span></p></li></ul></li><li><p><strong><span>Meiosis II</span></strong></p><ul><li><p><span>Similar a una mitosis, pero partiendo de células haploides:</span></p><ul><li><p><strong><span>Profase II</span></strong><span>: se reorganiza el huso mitótico.</span></p></li><li><p><strong><span>Metafase II</span></strong><span>: las cromátides hermanas se alinean en el ecuador.</span></p></li><li><p><strong><span>Anafase II</span></strong><span>: se separan las cromátides.</span></p></li><li><p><strong><span>Telofase II y citocinesis</span></strong><span>: se obtienen cuatro células haploides, cada una con </span><strong><span>n</span></strong><span> cromosomas sencillos.</span></p></li></ul></li></ul></li></ol><blockquote><p><strong><span>Resultado y relevancia:</span></strong></p><ul><li><p><span>En animales → 4 gametos haploides.</span></p></li><li><p><span>En plantas  → 4 esporas haploides (capaces de originar un gametofito sin fecundación).</span></p></li><li><p><strong><span>Importancia biológica</span></strong><span>: asegura la variabilidad genética y mantiene constante el número de cromosomas en cada especie.</span></p></li></ul></blockquote><hr /><blockquote><p><span>Comprender los mecanismos de mitosis y meiosis es fundamental para temas avanzados como genética, embriología y biotecnología. </span></p></blockquote><h2 id='metabolismo-anabolismo-y-catabolismo'><span>Metabolismo: Anabolismo y Catabolismo</span></h2><p><span>El </span><strong><span>metabolismo</span></strong><span> (del griego </span><em><span>metábolē</span></em><span>, “cambio”) es el conjunto de miles de reacciones químicas que tienen lugar simultáneamente en todos los seres vivos y permiten el intercambio de energía y materia con el entorno.</span></p><hr /><h3 id='vías-metabólicas-compartidas'><span>Vías metabólicas compartidas</span></h3><p><span>A pesar de la enorme diversidad de la vida —desde bacterias hasta plantas, hongos, medusas y mamíferos— muchas rutas metabólicas son prácticamente idénticas. Por ejemplo:</span></p><ul><li><p><strong><span>Glucólisis</span></strong><span>: degradación de glucosa para obtener energía.</span></p></li><li><p><strong><span>Respiración celular</span></strong><span>: uso de oxígeno para producir ATP.</span></p></li></ul><p><span>Estas rutas “universales” demuestran la conservación evolutiva de los procesos bioquímicos esenciales.</span></p><hr /><h3 id='anabolismo'><span>Anabolismo</span></h3><p><span>El </span><strong><span>anabolismo</span></strong><span> agrupa todas las reacciones de </span><strong><span>síntesis</span></strong><span> en la célula. Su objetivo es:</span></p><ul><li><p><strong><span>Construir</span></strong><span> moléculas complejas (proteínas, ácidos nucleicos, lípidos, polisacáridos)</span></p></li><li><p><strong><span>Almacenar</span></strong><span> energía en enlaces químicos</span></p></li><li><p><strong><span>Permitir</span></strong><span> el crecimiento, la reparación y la diferenciación celular</span></p></li></ul><blockquote><p><strong><span>Ejemplo:</span></strong><span> la formación de glucógeno en el hígado a partir de glucosa libre.</span></p></blockquote><hr /><h3 id='catabolismo'><span>Catabolismo</span></h3><p><span>El </span><strong><span>catabolismo</span></strong><span> comprende las reacciones de </span><strong><span>degradación</span></strong><span> de moléculas complejas para:</span></p><ol><li><p><strong><span>Liberar energía</span></strong><span> que alimenta al anabolismo y otras funciones celulares.</span></p></li><li><p><strong><span>Generar precursores</span></strong><span> (bloques básicos) para las rutas anabólicas.</span></p></li></ol><blockquote><p><strong><span>Ejemplo:</span></strong><span> la hidrólisis de triglicéridos en ácidos grasos y glicerol, que luego se oxidan en la mitocondria.</span></p></blockquote><hr /><h3 id='el-papel-de-las-enzimas'><span>El papel de las enzimas</span></h3><ul><li><p><span>Las </span><strong><span>enzimas</span></strong><span> son </span><strong><span>biocatalizadores</span></strong><span> que aceleran y regulan casi todas las reacciones metabólicas.</span></p></li><li><p><span>Sin ellas, las reacciones serían demasiado lentas para sostener la vida.</span></p></li><li><p><span>Cada enzima es específica de su sustrato y puede verse modulada por factores como pH, temperatura o inhibidores.</span></p></li></ul><blockquote><ul><li><p><span>Relaciona cada vía con su función biológica (energía, estructura, señalización).</span></p></li><li><p><span>Observa esquemas de rutas metabólicas e identifica puntos de convergencia (p. ej., piruvato en la glucólisis y ciclo de Krebs).</span></p></li><li><p><span>Recuerda que el equilibrio anabólico–catabólico varía según el estado nutricional y fisiológico del organismo (ayuno, ejercicio, desarrollo).</span></p></li></ul><p><span>Comprender el metabolismo es esencial para disciplinas como bioquímica, fisiología, nutrición y farmacología.</span></p></blockquote><h2 id='genética'><span>Genética</span></h2><p><span>La genética es la rama de la biología que estudia cómo se transmiten los caracteres de padres a hijos. En este proceso, las </span><strong><span>mutaciones</span></strong><span> desempeñan un papel fundamental:</span></p><ul><li><p><strong><span>Definición</span></strong><span>: Alteraciones en la secuencia de ADN que pueden ser causadas por agentes mutágenos</span>
+<span> (biológicos –virus, transposones–, físicos –radiaciones– o químicos –sustancias reactivas–).</span></p></li><li><p><strong><span>Tipos de efecto</span></strong><span>:</span></p><ul><li><p><strong><span>Puntuales</span></strong><span>, sin aparente efecto fenotípico.</span></p></li><li><p><strong><span>Amplias</span></strong><span>, que pueden alterar varios genes y, en casos extremos, ser letales.</span></p></li></ul></li><li><p><strong><span>Importancia evolutiva</span></strong><span>: Son la principal fuente de </span><strong><span>variabilidad genética</span></strong><span>, pues generan nuevos alelos y, con ello, nuevos fenotipos.</span></p></li></ul><hr /><h3 id='las-leyes-de-la-herencia'><span>Las leyes de la herencia</span></h3><p><span>Los pilares de la genética moderna se basan en los descubrimientos de </span><strong><span>Gregorio Mendel</span></strong><span> (1865), quien trabajó con plantas de chícharo y propuso que:</span></p><ul><li><p><span>Los rasgos heredables están en </span><strong><span>unidades discretas</span></strong><span> llamadas </span><strong><span>genes</span></strong><span>.</span></p></li><li><p><span>Cada gen tiene </span><strong><span>versiones</span></strong><span> (alelos), por ejemplo:</span></p><ul><li><p><strong><span>A</span></strong><span> = alelo dominante</span></p></li><li><p><strong><span>a</span></strong><span> = alelo recesivo</span></p></li></ul></li></ul><figure class='table-figure'><table><thead><tr><th><span>Genotipo</span></th><th><span>Definición</span></th></tr></thead><tbody><tr><td><strong><span>AA</span></strong></td><td><span>Homocigoto dominante</span></td></tr><tr><td><strong><span>aa</span></strong></td><td><span>Homocigoto recesivo</span></td></tr><tr><td><strong><span>Aa</span></strong><span> (o aA)</span></td><td><span>Heterocigoto (híbrido)</span></td></tr></tbody></table></figure><p><span>A partir de sus cruces, Mendel formuló tres postulados:</span></p><figure class='table-figure'><table><thead><tr><th><span>Ley</span></th><th><span>Enunciado</span></th></tr></thead><tbody><tr><td><strong><span>1. Uniformidad (Primera Ley)</span></strong></td><td><span>Al cruzar dos homocigotos puros para un carácter (AA × aa), toda la progenie es heterocigota (Aa).</span></td></tr><tr><td><strong><span>2. Segregación (Segunda Ley)</span></strong></td><td><span>En los híbridos (Aa), los alelos se separan durante la formación de gametos y se combinan de todas las maneras posibles en la siguiente generación.</span></td></tr><tr><td><strong><span>3. Herencia independiente (Tercera Ley)</span></strong></td><td><span>Cada par de alelos se transmite a la progenie de forma independiente de los demás pares, siempre que los genes estén en cromosomas diferentes.</span></td></tr></tbody></table></figure><hr /><h3 id='genética-clásica-el-cuadro-de-punnett'><span>Genética clásica: el cuadro de Punnett</span></h3><p><span>Para predecir las proporciones genotípicas y fenotípicas en la progenie, se utiliza el </span><strong><span>cuadro de Punnett</span></strong><span>. A continuación, un ejemplo de cruzar dos heterocigotos </span><strong><span>Aa × Aa</span></strong><span>:</span></p><figure class='table-figure'><table><thead><tr><th>&nbsp;</th><th><strong><span>A</span></strong><span> (gameto)</span></th><th><strong><span>a</span></strong><span> (gameto)</span></th></tr></thead><tbody><tr><td><strong><span>A</span></strong><span> (gameto)</span></td><td><span>AA</span></td><td><span>Aa</span></td></tr><tr><td><strong><span>a</span></strong><span> (gameto)</span></td><td><span>aA</span></td><td><span>aa</span></td></tr></tbody></table></figure><ul><li><p><strong><span>Genotipos resultantes</span></strong><span>:</span></p><ul><li><p><span>1/4 </span><strong><span>AA</span></strong></p></li><li><p><span>2/4 </span><strong><span>Aa</span></strong></p></li><li><p><span>1/4 </span><strong><span>aa</span></strong></p></li></ul></li><li><p><strong><span>Fenotipos (si A es dominante)</span></strong><span>:</span></p><ul><li><p><span>3/4 muestran el rasgo dominante</span></p></li><li><p><span>1/4 muestran el rasgo recesivo</span></p></li></ul></li></ul><hr /><blockquote><p><strong><span>Sugerencias de estudio</span></strong></p><ol><li><p><span>Dibuja tus propios cuadros de Punnett para distintos cruces (dihíbridos, cruces test).</span></p></li><li><p><span>Relaciona cada ley de Mendel con ejemplos reales (color de flores, textura de semillas).</span></p></li><li><p><span>Repasa cómo la </span><strong><span>meiosis</span></strong><span> respeta la segregación independiente de los alelos.</span></p></li></ol></blockquote><blockquote><p><span>Este marco conceptual te servirá de base para disciplinas avanzadas como la </span><strong><span>biotecnología</span></strong><span>, la </span><strong><span>genómica</span></strong><span> y la </span><strong><span>medicina personalizada</span></strong><span>, donde comprenderás cómo los genes influyen en la salud y la enfermedad.</span></p></blockquote><h2 id='la-mutación-y-sus-tipos'><span>La mutación y sus tipos</span></h2><p><span>El término </span><strong><span>mutación</span></strong><span> fue acuñado por el botánico neerlandés </span><strong><span>Hugo de Vries</span></strong><span>, quien, al estudiar la herencia en plantas, observó que surgían variaciones en la descendencia que no estaban presentes en ninguna de las líneas parentales. Estas variaciones, o mutaciones, son cambios permanentes en la secuencia de ADN y constituyen la principal fuente de diversidad genética.</span></p><hr /><h3 id='definición-y-origen'><span>Definición y origen</span></h3><ul><li><p><strong><span>Mutación</span></strong><span>: cambio en la información genética (ADN) de una célula u organismo.</span></p></li><li><p><strong><span>Origen</span></strong><span>:</span></p><ul><li><p><strong><span>Espontáneas</span></strong><span>: errores durante la replicación del ADN o reparaciones imperfectas.</span></p></li><li><p><strong><span>Inducidas</span></strong><span>: provocadas por agentes mutagénicos (radiaciones, químicos, virus, transposones).</span></p></li></ul></li></ul><hr /><h3 id='clasificación-según-el-alcance'><span>Clasificación según el alcance</span></h3><figure class='table-figure'><table><thead><tr><th><span>Nivel</span></th><th><span>Descripción</span></th><th><span>Ejemplos</span></th></tr></thead><tbody><tr><td><strong><span>Genética</span></strong></td><td><span>Alteraciones en uno o pocos nucleótidos dentro de un gen</span></td><td><span>Mutaciones puntuales (punto), deleciones o inserciones pequeñas (frameshift)</span></td></tr><tr><td><strong><span>Cromosómica</span></strong></td><td><span>Cambios en la estructura de un cromosoma</span></td><td><span>Deleción, duplicación, inversión, translocación</span></td></tr><tr><td><strong><span>Genómica</span></strong></td><td><span>Variación en el número completo de cromosomas</span></td><td><span>Aneuploidías (ej. trisomías), poliploidías</span></td></tr></tbody></table></figure><hr /><h3 id='tipos-de-mutación-genética-puntuales'><span>Tipos de mutación genética (puntuales)</span></h3><figure class='table-figure'><table><thead><tr><th><span>Tipo</span></th><th><span>Definición</span></th><th><span>Consecuencia típica</span></th></tr></thead><tbody><tr><td><strong><span>Silenciosa</span></strong></td><td><span>Cambio de base que no altera el aminoácido codificado</span></td><td><span>Fenotipo inalterado</span></td></tr><tr><td><strong><span>Missense</span></strong></td><td><span>Sustitución de un nucleótido que cambia un aminoácido</span></td><td><span>Proteína con función alterada o parcial</span></td></tr><tr><td><strong><span>Nonsense</span></strong></td><td><span>Sustitución que convierte un codón en señal de paro (stop)</span></td><td><span>Proteína truncada, generalmente no funcional</span></td></tr><tr><td><strong><span>Frameshift</span></strong></td><td><span>Inserción o deleción de 1–2 nucleótidos que desplaza el marco de lectura</span></td><td><span>Proteína completamente diferente o no funcional</span></td></tr></tbody></table></figure><hr /><h3 id='tipos-de-mutación-cromosómica'><span>Tipos de mutación cromosómica</span></h3><figure class='table-figure'><table><thead><tr><th><span>Mutación</span></th><th><span>Descripción</span></th></tr></thead><tbody><tr><td><strong><span>Deleción</span></strong></td><td><span>Pérdida de un fragmento cromosómico</span></td></tr><tr><td><strong><span>Duplicación</span></strong></td><td><span>Copia adicional de un segmento cromosómico</span></td></tr><tr><td><strong><span>Inversión</span></strong></td><td><span>Un fragmento cromosómico se invierte 180°</span></td></tr><tr><td><strong><span>Translocación</span></strong></td><td><span>Intercambio de segmentos entre cromosomas no homólogos</span></td></tr></tbody></table></figure><hr /><h3 id='tipos-de-mutación-genómica'><span>Tipos de mutación genómica</span></h3><ul><li><p><strong><span>Aneuploidía</span></strong><span>: variación en el número de uno o varios cromosomas (p. ej., trisomía 21 en síndrome de Down).</span></p></li><li><p><strong><span>Poliploidía</span></strong><span>: duplicación del genoma completo, común en plantas.</span></p></li></ul><hr /><blockquote><p><span>Las mutaciones son esenciales para la evolución, ya que generan nuevos alelos y fenotipos. Sin embargo, algunas pueden causar enfermedades genéticas o predisponer al cáncer, de modo que entender sus tipos y mecanismos es clave en genética, biotecnología y medicina.</span></p></blockquote><h2 id='los-ácidos-nucleicos'><span>Los ácidos nucleicos</span></h2><p><span>Los </span><strong><span>ácidos nucleicos</span></strong><span> son biomoléculas esenciales que almacenan y transmiten la información genética. Su unidad estructural (monómero) es el </span><strong><span>nucleótido</span></strong><span>, compuesto por:</span></p><ol><li><p><span>Un </span><strong><span>grupo fosfato</span></strong></p></li><li><p><span>Una </span><strong><span>pentosa</span></strong><span> (azúcar de 5 carbonos)</span></p></li><li><p><span>Una </span><strong><span>base nitrogenada</span></strong></p></li></ol><p><span>Existen dos tipos principales de ácidos nucleicos: </span><strong><span>ADN</span></strong><span> (ácido desoxirribonucleico) y </span><strong><span>ARN</span></strong><span> (ácido ribonucleico). A continuación, se resumen sus características y diferencias:</span></p><figure class='table-figure'><table><thead><tr><th><span>Característica</span></th><th><span>ADN</span></th><th><span>ARN</span></th></tr></thead><tbody><tr><td><strong><span>Cadena</span></strong></td><td><span>Doble hélice</span></td><td><span>Sencilla y lineal</span></td></tr><tr><td><strong><span>Pentosa</span></strong></td><td><span>Desoxirribosa</span></td><td><span>Ribosa</span></td></tr><tr><td><strong><span>Bases nitrogenadas</span></strong></td><td><span>Adenina (A), Guanina (G), Citocina (C), </span><strong><span>Timina (T)</span></strong></td><td><span>Adenina (A), Guanina (G), Citocina (C), </span><strong><span>Uracilo (U)</span></strong></td></tr><tr><td><strong><span>Direccionalidad</span></strong></td><td><span>Cadenas antiparalelas: 5’→3’ y 3’→5’</span></td><td><span>Una sola dirección: 5’→3’</span></td></tr><tr><td><strong><span>Ubicación celular</span></strong></td><td><span>Principalmente en el núcleo (eucariotas); en el citoplasma de procariotas</span></td><td><span>En núcleo y citoplasma (eucariotas); citosol (procariotas)</span></td></tr><tr><td><strong><span>Función principal</span></strong></td><td><span>Almacenar información genética a largo plazo</span></td><td><span>Transferir y “leer” la información para la síntesis de proteínas</span></td></tr><tr><td><strong><span>Tipos principales</span></strong></td><td><span>—</span></td><td><span>- </span><strong><span>ARN mensajero (ARNm)</span></strong><span>- </span><strong><span>ARN de transferencia (ARNt)</span></strong><span>- </span><strong><span>ARN ribosomal (ARNr)</span></strong></td></tr></tbody></table></figure><hr /><h3 id='funciones-clave'><span>Funciones clave</span></h3><ul><li><p><strong><span>ADN</span></strong></p><ul><li><p><span>Guarda el “programa” genético de cada organismo.</span></p></li><li><p><span>Su estabilidad química permite conservar la información a través de generaciones.</span></p></li></ul></li><li><p><strong><span>ARN</span></strong></p><ul><li><p><strong><span>ARNm</span></strong><span>: transporta la información del ADN desde el núcleo hasta los ribosomas.</span></p></li><li><p><strong><span>ARNt</span></strong><span>: lleva los aminoácidos y reconoce los codones del ARNm.</span></p></li><li><p><strong><span>ARNr</span></strong><span>: forma parte de la estructura de los ribosomas y cataliza la síntesis proteica.</span></p></li></ul></li></ul><blockquote><p><span>Dibuja la estructura de un nucleótido y construye tú mismo la doble hélice de ADN con dos cadenas antiparalelas. Luego, contrasta visualmente cómo el ARN difiere en azúcar y bases nitrogenadas. Esto fortalecerá tu comprensión de cómo pequeñas diferencias químicas producen funciones tan distintas.</span></p></blockquote><h2 id='evolución'><span>Evolución</span></h2><p><span>La </span><strong><span>evolución</span></strong><span> es el paradigma fundamental de la biología que explica la </span><strong><span>diversidad</span></strong><span> de los seres vivos como resultado de los </span><strong><span>cambios</span></strong><span> que sufren las poblaciones a lo largo del tiempo, mediante mecanismos como la </span><strong><span>selección natural</span></strong><span>, la </span><strong><span>deriva genética</span></strong><span> y la </span><strong><span>migración</span></strong><span>.</span></p><hr /><h3 id='el-origen-de-la-vida'><span>El origen de la vida</span></h3><p><span>Desde tiempos antiguos, el ser humano se ha preguntado de dónde venimos y cómo surgió la vida. A lo largo de la historia se han propuesto múltiples teorías; a continuación se resumen </span><strong><span>siete</span></strong><span> de las más relevantes:</span></p><figure class='table-figure'><table><thead><tr><th><span>Teoría</span></th><th><span>Descripción breve</span></th></tr></thead><tbody><tr><td><strong><span>Generación espontánea</span></strong></td><td><span>Sugería que organismos simples surgían de materia inerte (rechazada por Pasteur, siglo XIX).</span></td></tr><tr><td><strong><span>Panspermia</span></strong></td><td><span>Propone que la vida llegó del espacio exterior, transportada por cometas o meteoritos.</span></td></tr><tr><td><strong><span>Sopa primordial</span></strong></td><td><span>Postula que moléculas orgánicas surgieron en océanos primitivos ricos en compuestos inorgánicos.</span></td></tr><tr><td><strong><span>Hipótesis de la arcilla</span></strong></td><td><span>Sugiere que las superficies de minerales de arcilla catalizaron la formación de polímeros.</span></td></tr><tr><td><strong><span>Mundo de ARN</span></strong></td><td><span>Plantea que el ARN (ácido ribonucleico) fue la primera molécula capaz de almacenar información y catalizar reacciones.</span></td></tr><tr><td><strong><span>Teoría hidrotermal</span></strong></td><td><span>Propone que la vida se originó en respiraderos termales submarinos, aprovechando gradientes químicos.</span></td></tr><tr><td><strong><span>Metabolismo primero</span></strong></td><td><span>Sugiere que las reacciones metabólicas primitivas surgieron antes de la aparición de material genético.</span></td></tr></tbody></table></figure><blockquote><p><span>Investiga cada teoría y anota sus fortalezas y debilidades. Relaciónalas con los avances tecnológicos (microscopios, sondas espaciales, síntesis de ARN) que permitieron refinar o descartar algunas.</span></p></blockquote><hr /><h2 id='teoría-de-la-selección-natural'><span>Teoría de la selección natural</span></h2><p><span>Propuesta </span><strong><span>independientemente</span></strong><span> por </span><strong><span>Charles Darwin</span></strong><span> y </span><strong><span>Alfred Russel Wallace</span></strong><span> en 1858, la selección natural describe cómo:</span></p><ol start='' ><li><p><strong><span>Variación</span></strong><span>: Dentro de una población, los individuos muestran </span><strong><span>pequeñas diferencias</span></strong><span> heredables (color, tamaño, resistencia a enfermedades…).</span></p></li><li><p><strong><span>Lucha por la supervivencia</span></strong><span>: Los recursos son limitados (alimento, espacio, parejas), por lo que </span><strong><span>no todos sobreviven</span></strong><span> ni se reproducen.</span></p></li><li><p><strong><span>Adaptación</span></strong><span>: Los individuos con </span><strong><span>caracteres ventajosos</span></strong><span> (mejor camuflaje, mayor resistencia, etc.) tienen </span><strong><span>más posibilidades de sobrevivir</span></strong><span> y reproducirse.</span></p></li><li><p><strong><span>Herencia</span></strong><span>: Estos caracteres favorables se </span><strong><span>transmiten</span></strong><span> a la descendencia, incrementando su frecuencia en la población.</span></p></li></ol><figure class='table-figure'><table><thead><tr><th><span>Paso</span></th><th><span>Descripción</span></th></tr></thead><tbody><tr><td><strong><span>Variación</span></strong></td><td><span>Mutaciones y recombinación durante la meiosis generan diferencias entre individuos.</span></td></tr><tr><td><strong><span>Selección</span></strong></td><td><span>El ambiente “elige” (favorece) a los mejor adaptados; los menos aptos tienen menor éxito reproductivo.</span></td></tr><tr><td><strong><span>Herencia</span></strong></td><td><span>Sólo los rasgos hereditarios pasan a la siguiente generación; así, la población cambia gradualmente.</span></td></tr></tbody></table></figure><blockquote><p><span>En una población de polillas, en ambientes oscuros prevalecen las de color oscuro (mejor camuflaje), mientras que en troncos claros predominan las claras.</span></p></blockquote><hr /><blockquote><ul><li><p><span>Usa </span><strong><span>líneas de tiempo</span></strong><span> para visualizar cuándo surgieron las principales teorías.  </span></p></li><li><p><span>Construye </span><strong><span>diagramas de flujo</span></strong><span> que conecten mutación → variación → selección → adaptación.  </span></p></li><li><p><span>Relaciona la selección natural con casos reales (resistencia a antibióticos, cambio climático, domesticación de plantas y animales).</span></p></li></ul></blockquote></div></div>
+</body>
+</html>

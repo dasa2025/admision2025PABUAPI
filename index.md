@@ -80,6 +80,7 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 En esta sección encontrarás los siguientes materiales de estudio:
 - [Materiales de Ciencias Naturales y de la Salud](https://drive.google.com/drive/folders/14214nxeJmVn2eeMyf0HS-78ckwNgvU6F?usp=sharing)
 - [Repaso de Ciencias Naturales y de la Salud - Parte 1](Salud1.html)
+- [Repaso de Ciencias Naturales y de la Salud - Parte 2](Salud2.html)
 - [Materiales de Psicología](https://drive.google.com/drive/folders/1j75mlaSL-6K2RTkpDz5UVKjr4dev5A1W?usp=sharing)
 
   

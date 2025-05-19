@@ -30,7 +30,7 @@ Ningún material puede reemplazar lo que aprendiste en la educación media super
 
 Estos materiales no son obligatorios y son totalmente gratuitos. Sin embargo, puedes autoevaluarte con la prueba diagnóstica. 
 
-**Nota importante**: El primer módulo que verás corresponde a la componente de *Expresión sin fronteras y pensamiento global*. Cada dos días se irá activando el material de los módulos de manera secuencial. Adicionalmente, verás habilitados materiales para la ubicación de la lengua extranjera. Así que te invitamos a mantenerte pendiente para contar siempre con la información más reciente y actualizada. La literatura marca la importancia de los aprendizajes secuenciales y modulares, así que tenemos todo preparado para tu éxito.
+**Nota importante**: Te invitamos a mantenerte pendiente para contar siempre con la información más reciente y actualizada. La literatura marca la importancia de los aprendizajes secuenciales y modulares, así que tenemos todo preparado para tu éxito.
 
 ¡Tu éxito empieza aquí! Estamos seguros de que, con tu esfuerzo y energía positiva, lograrás grandes cosas. ¡Ánimo y mucho éxito en tu preparación para la PA-BUAP II!
 
@@ -80,6 +80,7 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 En esta sección encontrarás los siguientes materiales de estudio:
 - [Materiales de Ciencias Naturales y de la Salud](https://drive.google.com/drive/folders/14214nxeJmVn2eeMyf0HS-78ckwNgvU6F?usp=sharing)
 - [Repaso de Ciencias Naturales y de la Salud - Parte 1](Salud1.html)
+- [Materiales de Psicología](https://drive.google.com/drive/folders/1j75mlaSL-6K2RTkpDz5UVKjr4dev5A1W?usp=sharing)
 
   
 ### Ciencias Sociales y Humanidades

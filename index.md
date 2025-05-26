@@ -43,7 +43,7 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 
 - [PRUEBA DIAGNÓSTICA PA BUAP I: MATEMÁTICAS](https://www.goconqr.com/en/quiz/40421079/prueba-diagnostica-pa-buap-i-matematicas)
 - [PRUEBA DIAGNÓSTICA PA BUAP I: ESPAÑOL](https://www.goconqr.com/en/quiz/40421638/prueba-diagnostica-pa-buap-i-espanol)
-
+- [PRUEBA DIAGNÓSTICA PA BUAP I: CIENCIAS NATURALES Y DE LA SALUD](https://www.goconqr.com/en/quiz/40460420/prueba-diagnostica-pa-buap-i-ciencias-naturales-y-de-la-salud)
 ---
 
 ## 📖 Módulo 1: Expresión sin fronteras y pensamiento global

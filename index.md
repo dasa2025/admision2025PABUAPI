@@ -46,6 +46,7 @@ Para empezar con el pie derecho, te invitamos a realizar la siguiente prueba dia
 - [PRUEBA DIAGNÓSTICA PA BUAP I: CIENCIAS NATURALES Y DE LA SALUD](https://www.goconqr.com/en/quiz/40460420/prueba-diagnostica-pa-buap-i-ciencias-naturales-y-de-la-salud)
 - [PRUEBA DIAGNÓSTICA PA BUAP I: INGENIERÍAS Y CIENCIAS EXACTAS](https://www.goconqr.com/en/quiz/40462176/prueba-diagnostica-pa-buap-i-ingenierias-y-ciencias-exactas)
 - [PRUEBA DIAGNÓSTICA PA BUAP I: CIENCIAS SOCIALES Y HUMANIDADES](https://www.goconqr.com/en/quiz/40466277/prueba-diagnostica-pa-buap-i-ciencias-sociales-y-humanidades)
+- [PRUEBA DIAGNÓSTICA PA BUAP I: CIENCIAS ECONÓMICO-ADMINISTRATIVAS](https://www.goconqr.com/en/quiz/40471026/prueba-diagnostica-pa-buap-i-ciencias-economico-administrativas)
 
 ---
 
